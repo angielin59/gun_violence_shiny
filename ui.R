@@ -17,10 +17,10 @@ fluidPage(
                    p(em("NYC Data Science Academy", style = "color:black")),
                    p("April 2019", style = "color:black"),
                    h3(strong("Introduction to the App:", style = "color:black")),
-                   p("The goal of this app is to help the user visualize certain trends in gun violence though various observations/variables. 
-                   With a more broad understanding of the trends of gun violence, it is possible for us to see where to actively target areas 
-                   to decrease the amount of gun violence in the future. The summary below is to describe the 
-                    contents of each tab and explain the plots and charts.", 
+                   p("The goal of this app is to help the user visualize trends in gun violence though various observations/variables. 
+                   With a more broad understanding of the trends of gun violence, it is possible for us to see where to actively target 
+                   areas to decrease the amount of gun violence in the future. We look at the number of incidents and deaths from gun violence 
+                    through different states, as well as over months and years.", 
                     style = "color:black"), 
                     
                     p(h3(strong("Source:", style = "color:black"))),
@@ -40,8 +40,9 @@ fluidPage(
                     p("This contains 2 tabs, US Map and US Chart.", style = "color:black"),
                     
                     p("The ", strong("US Map"), "tab contains a map of the continental US with markers for the locations of incidents 
-                    based on the number of effected people. The user is to select the number of effected persons per a given incident 
-                    from the dropdown menu. The options are a list of 0, 1, 2, 3, 4, 5-10, 10-20, 20+.", style = "color:black"), 
+                    based on the number of effected people. Effected people would be the number of people that were killed or injured during the event. 
+                    The user is to select the number of effected persons per a given incident from the dropdown menu. The options are a list of 
+                     0, 1, 2, 3, 4, 5-10, 10-20, 20+.", style = "color:black"), 
                     
                     p("The ", strong("US Chart"), "tab contains a chart of the number of incidents per every 100,000 people in each state. 
                     This chart takes into account population sizes in each state so that the number of incidents can 

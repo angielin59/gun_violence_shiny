@@ -11,7 +11,7 @@ colStates <- maps::map("state", fill = TRUE,
                  plot = FALSE,
                  region = sort(unique(leafplot$state)))
 
-simpleCap <- function(x) {
+capitalState <- function(x) {
     s <- strsplit(x, " ")[[1]]
     paste(toupper(substring(s, 1,1)), substring(s, 2),
           sep="", collapse=" ")
@@ -47,7 +47,7 @@ function(input, output) {
                         fillColor = "green",
                         highlightOptions = highlightOptions(color = "White", weight = 4),
                         stroke = TRUE, 
-                        label = lapply(colStates$names, simpleCap)
+                        label = lapply(colStates$names, capitalState)
                         ) %>%
             addCircles(lng = filterData()$longitude, lat = filterData()$latitude, 
                             radius = 6,
