@@ -6,20 +6,6 @@
 #
 #    http://shiny.rstudio.com/
 #
-#24.850927,-172.272968 SW
-#72.556145,-182.758448 NW
-#70.103008,-57.496120 SE
-#24.589588,-64.639612 ME
-# addCircles(lng = leafplot$longitude, lat = leafplot$latitude)
-# fitBounds(lng1 = min(leaflet$longitude), 
-#           lat1 = min(leaflet$latitude), 
-#           lng2 = max(leaflet$longitude), 
-#           lat2 = max(leaflet$latitude))
-# label = (paste0(toupper(substring(colStates$names, 1, 1)), 
-#                 substring(colStates$names, 2)
-# )
-# )
-# )
 
 colStates <- maps::map("state", fill = TRUE,
                  plot = FALSE,
